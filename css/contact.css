@@ -1,0 +1,255 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* ===== Header ===== */
+header {
+  margin: 20px 0;
+  background-color: #005f73;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+header img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* ===== Navigation with Hamburger Menu ===== */
+.main-nav {
+  background-color: #0a9396;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.nav-header img {
+  height: 40px;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.menu-icon {
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+
+
+.nav-links {
+  text-align: center;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  display: inline-block;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    /* text-align: left; */
+    margin-top: 10px;
+  }
+
+  .nav-links a {
+    margin: 10px 0;
+    display: block;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+}
+
+/* ===== Main Content ===== */
+main {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+h1 {
+  font-size: 2.2em;
+  color: #0077b6;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* ===== Contact Form ===== */
+.contact-form {
+  width: 80%;
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure radio buttons and labels align side by side */
+.radio-buttons {
+  display: flex;
+  gap: 15px; /* Add space between radio buttons */
+  align-items: center; /* Align radio buttons and labels vertically */
+}
+
+/* Ensure no extra space for radio buttons */
+.radio-buttons input {
+  margin: 0;
+}
+
+/* Add space between the radio button and label */
+.radio-buttons label {
+  margin-left: 5px;
+  font-weight: normal;
+}
+
+
+fieldset {
+  border: 2px solid #0077b6;
+  border-radius: 10px;
+  padding: 50px;
+  margin-bottom: 20px;
+  background-color: #f0fbff;
+  transition: background-color 0.3s ease;
+}
+
+fieldset:hover {
+  background-color: #e8f7ff;
+}
+
+legend {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #005f73;
+  padding: 0 10px;
+}
+
+ol {
+  list-style-type: decimal;
+  padding-left: 25px;
+}
+
+li {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 4px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #0077b6;
+  box-shadow: 0 0 6px rgba(0, 119, 182, 0.3);
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+button {
+  background-color: #0a9396;
+  color: white;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+}
+
+button[type="button"]:hover {
+  background-color: #ee6c4d;
+}
+
+button[type="reset"]:hover {
+  background-color: #ee6c4d;
+}
+
+@media (max-width: 600px) {
+  .contact-form {
+    width: 95%;
+    padding: 20px;
+  }
+
+  fieldset {
+    padding: 15px;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+/* ===== Footer ===== */
+footer {
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  border-top: 1px solid #ccc;
+}
+
+footer a {
+  color: #ee6c4d;
+  text-decoration: none;
+}

@@ -1,0 +1,150 @@
+/*
+Name: Payal patel
+  Student Number: C0959412
+*/
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  margin: 20px 0;
+  background-color: #005f73;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+header img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* === NAVIGATION === */
+nav {
+  background-color: #0a9396;
+  padding: 30px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav img {
+  height: 40px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+main {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+h1 {
+  font-size: 2em;
+  color: #0077b6;
+}
+
+h2 {
+  font-size: 1.5em;
+  color: #0077b6;
+}
+
+.audio-section, .video-section {
+  margin-bottom: 40px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+audio, video {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+footer {
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  border-top: 1px solid #ccc;
+}
+
+footer a {
+  color: #ee6c4d;
+  text-decoration: none;
+}
+
+/* === HAMBURGER MENU === */
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.menu-icon {
+  font-size: 28px;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+/* Hide menu links by default on small screens */
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* When toggled, show it */
+.nav-links.show {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #0a9396;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links a {
+    margin: 10px 0;
+  }
+}

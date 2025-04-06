@@ -1,0 +1,189 @@
+/*
+Name: Payal Patel
+Student Number: C0959412
+*/
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  margin: 20px 0;
+  background-color: #005f73;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+header img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* === NAVIGATION === */
+.main-nav {
+  background-color: #0a9396;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.nav-header img {
+  height: 40px;
+}
+
+.menu-icon {
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+
+.nav-links {
+  text-align: center;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  display: inline-block;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* === MAIN === */
+main {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #0077b6;
+}
+
+h2 {
+  font-size: 2em;
+  color: #0077b6;
+  margin-top: 30px;
+}
+
+.faq-section {
+  margin: 40px 0;
+  padding: 20px;
+  background-color: #e9f5f9;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+}
+
+.faq-item {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.faq-item:hover {
+  transform: scale(1.01);
+  background-color: #f5fbff;
+}
+
+.faq-item h3 {
+  font-size: 1.4em;
+  color: #023e8a;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.faq-item h3::after {
+  content: "➤";
+  transform: rotate(90deg);
+  transition: transform 0.3s ease;
+  font-size: 1.1rem;
+  color: #0096c7;
+}
+
+.faq-item.open h3::after {
+  transform: rotate(270deg);
+}
+
+.faq-item p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.faq-item.open p {
+  max-height: 500px;
+  margin-top: 10px;
+}
+
+/* === FOOTER === */
+footer {
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  border-top: 1px solid #ccc;
+}
+
+footer a {
+  color: #ee6c4d;
+  text-decoration: none;
+}
+
+/* === RESPONSIVE STYLES === */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links a {
+    display: block;
+    margin: 10px 0;
+  }
+}

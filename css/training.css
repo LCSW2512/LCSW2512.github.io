@@ -1,0 +1,225 @@
+/*
+Name: Payal patel
+  Student Number: C0959412
+*/
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f9fd;
+    color: #222;
+  }
+  
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  header {
+    margin: 20px 0;
+    background-color: #005f73;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    text-align: center;
+  }
+  
+  header img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  /* === NAVIGATION === */
+  .main-nav {
+    background-color: #0a9396;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  
+  .nav-header img {
+    height: 40px;
+  }
+  
+  .nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  
+  .menu-icon {
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+  }
+  
+  .nav-links {
+    text-align: center;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    display: inline-block;
+  }
+  
+  /* === MAIN CONTENT === */
+  main {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+  }
+  
+  h1, h2 {
+    color: #005f73;
+  }
+  
+  ol {
+    margin-left: 20px;
+  }
+  
+  strong {
+    color: #ca6702;
+  }
+  
+  /* === FOOTER === */
+  footer {
+    font-size: 0.8rem;
+    color: #444;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    border-top: 1px solid #ccc;
+  }
+  
+  footer a {
+    color: #ca6702;
+    text-decoration: none;
+  }
+  
+  /* === RESPONSIVE STYLES === */
+  .mobile, .tablet, .desktop {
+    padding: 10px;
+  }
+  
+  /* Mobile */
+  @media (max-width: 768px) {
+    .menu-icon {
+      display: block;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      margin-top: 10px;
+    }
+  
+    .nav-links a {
+      display: block;
+      margin: 10px 0;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .mobile {
+      background-color: #d9faff;
+    }
+  }
+  
+  /* Tablet */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .tablet {
+      background-color: #fcefd2;
+    }
+  }
+  
+  /* Desktop */
+  @media (min-width: 1025px) {
+    .desktop {
+      background-color: #e8f5e9;
+    }
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  caption {
+    caption-side: top;
+    font-size: 1.8em;
+    font-weight: bold;
+    padding: 20px 10px;
+    color: #023e8a;
+    background-color: #e0f7ff;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+  
+  th, td {
+    padding: 16px;
+    text-align: center;
+    font-size: 1rem;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background: linear-gradient(to right, #0077b6, #0096c7);
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f9ff;
+  }
+  
+  tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+  
+  tr:hover {
+    background-color: #caf0f8;
+    transition: background-color 0.3s ease;
+  }
+  
+  td:first-child, th:first-child {
+    border-left: none;
+  }
+  
+  td:last-child, th:last-child {
+    border-right: none;
+  }
+  
+  
+  footer {
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    border-top: 1px solid #ccc;
+  }
+  
+  footer a {
+    color: #ee6c4d;
+    text-decoration: none;
+  }
+  
