@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!-- 
+  Name: Payal Patel
+  Student Number: C0959412
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - Clothes Dryer Co.</title>
+  <link rel="stylesheet" href="css/about.css" />
+  <link rel="shortcut icon" href="images/logo.avif" />
+</head>
+<body>
+  <div class="container">
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+      <div class="nav-header">
+        <a href="index.html"><img src="images/logo.avif" alt="Logo" /></a>
+        <a class="menu-icon" onclick="hamburger()">&#9776;</a>
+      </div>
+      <div id="menu-links" class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="team.html">Our Team</a>
+        <a href="specials.html">Specials</a>
+        <a href="training.html">Training</a>
+        <a href="media.html">Media</a>
+        <a href="faq.html">FAQs</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </nav>
+    
+    <!-- Header -->
+    <header>
+      <img src="images/dryer.webp" alt="Clothes Dryer Co. Banner" />
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <div class="desktop tablet mobile">
+        <h1>About Clothes Dryer Co.</h1>
+        <p>At Clothes Dryer Co., we believe in efficient, eco-friendly, and affordable laundry solutions. Our team is passionate about helping families save time, energy, and money with our advanced drying technologies.</p>
+        <p>We're not just selling machines—we're simplifying lives, one dryer at a time.</p>
+
+        <h2>Our Story</h2>
+        <p>Founded in 2090, Clothes Dryer Co. started with a simple mission: to revolutionize how people dry their clothes. From our humble garage beginnings, we’ve grown into a trusted name in smart appliances across the country.</p>
+
+        <h2>Six Reasons Why You Should Shop With Us</h2>
+        <ol>
+          <li>Energy-efficient dryers that save up to 40% power</li>
+          <li>5-year warranty on all models</li>
+          <li>Free nationwide delivery</li>
+          <li>24/7 customer support</li>
+          <li>Stylish, space-saving designs</li>
+          <li>Trusted by thousands of happy customers</li>
+        </ol>
+
+        <h2>Our Guarantee</h2>
+        <p>We guarantee top-tier quality, unmatched reliability, and peace of mind with every purchase. <strong>If you're not 100% satisfied, we'll refund your money—no questions asked.</strong></p>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      &copy; Copyright 2099. All Rights Reserved.<br />
+      <a href="mailto:info@clothesdryerco.com">Request information</a><br />
+      Payal Patel &nbsp;&nbsp; C0959412
+    </footer>
+  </div>
+
+  <!-- Script -->
+  <script>
+    function hamburger() {
+      const menu = document.getElementById("menu-links");
+      menu.classList.toggle("show");
+    }
+  </script>
+</body>
+</html>

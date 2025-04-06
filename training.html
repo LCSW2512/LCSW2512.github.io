@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!-- 
+  Name: Payal patel
+  Student Number: C0959412
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Training - Clothes Dryer Co.</title>
+  <link rel="stylesheet" href="css/training.css">
+  <link rel="shortcut icon" href="images/logo.avif"> 
+</head>
+<body>
+  <div class="container">
+   
+    <nav class="main-nav">
+      <div class="nav-header">
+        <a href="index.html"><img src="images/logo.avif" alt="Logo" /></a>
+        <a class="menu-icon" onclick="hamburger()">&#9776;</a>
+      </div>
+      <div id="menu-links" class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="team.html">Our Team</a>
+        <a href="specials.html">Specials</a>
+        <a href="training.html">Training</a>
+        <a href="media.html">Media</a>
+        <a href="faq.html">FAQs</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </nav> 
+    <header>
+      <img src="images/dryer.webp" alt="Clothes Dryer Co. Banner">
+    </header>
+
+    <main>
+      <h1>Product Training Schedule</h1>
+      <p>Stay updated with our training sessions to become a certified expert in operating and selling our dryers. All sessions are held online via Zoom.</p>
+
+      <table>
+        <caption>Product Training Schedule</caption>
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Date</th>
+            <th>Price</th>
+            <th>Length</th>
+            <th>Room</th>
+            <th>Instructor</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="alt">
+            <td><img src="images/special1.jpeg" alt="Dryer A" height="50"> Dryer A</td>
+            <td>April 10</td>
+            <td>$50</td>
+            <td>1 hr</td>
+            <td>Room 1</td>
+            <td>Jane Doe</td>
+          </tr>
+          <tr>
+            <td><img src="images/special3.jpg" alt="Dryer B" height="50"> Dryer B</td>
+            <td>April 12</td>
+            <td>$50</td>
+            <td>1.5 hrs</td>
+            <td>Room 2</td>
+            <td>John Smith</td>
+          </tr>
+          <tr class="alt">
+            <td><img src="images/special2.avif" alt="Dryer C" height="50"> Dryer C</td>
+            <td>April 14</td>
+            <td>$60</td>
+            <td>2 hrs</td>
+            <td>Room 1</td>
+            <td>Sara Kim</td>
+          </tr>
+          <tr>
+            <td><img src="images/special4.webp" alt="Dryer D" height="50"> Dryer D</td>
+            <td>April 16</td>
+            <td>$45</td>
+            <td>1 hr</td>
+            <td>Room 3</td>
+            <td>Mark Li</td>
+          </tr>
+          <tr class="alt">
+            <td><img src="images/special5.avif" alt="Dryer E" height="50"> Dryer E</td>
+            <td>April 18</td>
+            <td>$70</td>
+            <td>2 hrs</td>
+            <td>Room 2</td>
+            <td>Anna Lee</td>
+          </tr>
+          <tr>
+            <td><img src="images/special6.jpeg" alt="Dryer F" height="50"> Dryer F</td>
+            <td>April 20</td>
+            <td>$40</td>
+            <td>1 hr</td>
+            <td>Room 1</td>
+            <td>Tom Reed</td>
+          </tr>
+          <tr class="alt">
+            <td><img src="images/special4.webp" alt="Dryer G" height="50"> Dryer G</td>
+            <td>April 22</td>
+            <td>$55</td>
+            <td>1.5 hrs</td>
+            <td>Room 3</td>
+            <td>Emily Wong</td>
+          </tr>
+          <tr>
+            <td><img src="images/special1.jpeg" alt="Dryer H" height="50"> Dryer H</td>
+            <td>April 24</td>
+            <td>$65</td>
+            <td>2 hrs</td>
+            <td>Room 2</td>
+            <td>David Lee</td>
+          </tr>
+          <tr class="alt">
+            <td><img src="images/special2.avif" alt="Dryer I" height="50"> Dryer I</td>
+            <td>April 26</td>
+            <td>$50</td>
+            <td>1 hr</td>
+            <td>Room 1</td>
+            <td>Alice Chen</td>
+          </tr>
+          <tr>
+            <td><img src="images/special5.avif" alt="Dryer J" height="50"> Dryer J</td>
+            <td>April 28</td>
+            <td>$50</td>
+            <td>1.5 hrs</td>
+            <td>Room 3</td>
+            <td>Steve Brown</td>
+          </tr>
+          <tr class="alt">
+            <td><img src="images/special4.webp" alt="Dryer K" height="50"> Dryer K</td>
+            <td>April 30</td>
+            <td>$45</td>
+            <td>1 hr</td>
+            <td>Room 2</td>
+            <td>Karen Hill</td>
+          </tr>
+          <tr>
+            <td><img src="images/special5.avif" alt="Dryer L" height="50"> Dryer L</td>
+            <td>May 2</td>
+            <td>$55</td>
+            <td>1.5 hrs</td>
+            <td>Room 1</td>
+            <td>Paul Gray</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+
+    <footer>
+      &copy; Copyright 2099. All Rights Reserved.<br>
+      <a href="mailto:info@clothesdryerco.com">Request information</a><br>
+      Payal Patel &nbsp;&nbsp; C0959412
+    </footer>
+  </div>
+  <script>
+    function hamburger() {
+      const menu = document.getElementById("menu-links");
+      menu.classList.toggle("active");
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!-- 
+  Name: Payal Patel
+  Student Number: C0959412
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - Clothes Dryer Co.</title>
+  <link rel="stylesheet" href="css/contact.css" />
+  <link rel="shortcut icon" href="images/logo.avif" />
+</head>
+<body>
+  <div class="container">
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+      <div class="nav-header">
+        <a href="index.html"><img src="images/logo.avif" alt="Logo" /></a>
+        <a class="menu-icon" onclick="hamburger()">&#9776;</a>
+      </div>
+      <div id="menu-links" class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="team.html">Our Team</a>
+        <a href="specials.html">Specials</a>
+        <a href="training.html">Training</a>
+        <a href="media.html">Media</a>
+        <a href="faq.html">FAQs</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header>
+      <img src="images/dryer.webp" alt="Clothes Dryer Co. Banner" />
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <h1>Contact Us</h1>
+      <p>If you have any inquiries or need assistance, please use the form below to get in touch with us.</p>
+
+      <form id="contact-form" class="contact-form">
+        <fieldset>
+          <legend>Contact Information</legend>
+          <ol>
+            <li>
+              <label for="name">Full Name:</label>
+              <input type="text" id="name" name="name" placeholder="Enter your full name" required autofocus size="30" />
+            </li>
+            <li>
+              <label for="email">Email Address:</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email" required size="30" />
+            </li>
+            <li>
+              <label for="phone">Phone Number:</label>
+              <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" size="20" />
+            </li>
+            <li>
+              <label for="subject">Subject:</label>
+              <select id="subject" name="subject" required>
+                <option value="">Select a subject</option>
+                <option value="Product Inquiry">Product Inquiry</option>
+                <option value="Sales">Sales</option>
+                <option value="Support">Customer Support</option>
+              </select>
+            </li>
+            <li>
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" placeholder="Type your message here" rows="6" cols="40" required></textarea>
+            </li>
+            <li>
+              <label>Preferred Contact Method:</label>
+              <div class="radio-buttons">
+                <input type="radio" id="emailContact" name="contactMethod" value="Email" checked />
+                <label for="emailContact">Email</label>
+            
+                <input type="radio" id="phoneContact" name="contactMethod" value="Phone" />
+                <label for="phoneContact">Phone</label>
+              </div>
+            </li>
+            
+            <li>
+              <label>Subscribe to Newsletter:</label>
+              <input type="checkbox" id="newsletter" name="newsletter" value="Yes" /> Yes, please subscribe me
+            </li>
+            <li>
+              <label for="date">Preferred Contact Date:</label>
+              <input type="date" id="date" name="date" required/>
+            </li>
+          
+              <button type="button" onclick="submitForm()">Submit Request</button>
+              <button type="reset">Reset Form</button>
+            
+          </ol>
+        </fieldset>
+      </form>
+
+      <!-- Display Submitted Data -->
+      <div id="display-data" style="display:none;">
+        <h2>Submitted Information:</h2>
+        <div id="submitted-info"></div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      &copy; Copyright 2099. All Rights Reserved.<br />
+      <a href="mailto:info@clothesdryerco.com">Request information</a><br />
+      Payal Patel &nbsp;&nbsp; C0959412
+    </footer>
+  </div>
+
+  <!-- Hamburger Menu Script -->
+  <script>
+    function hamburger() {
+      const menu = document.getElementById("menu-links");
+      menu.classList.toggle("show");
+    }
+
+    function submitForm() {
+      // Get form values
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const phone = document.getElementById("phone").value;
+      const subject = document.getElementById("subject").value;
+      const message = document.getElementById("message").value;
+      const contactMethod = document.querySelector('input[name="contactMethod"]:checked').value;
+      const newsletter = document.getElementById("newsletter").checked ? "Yes" : "No";
+      const date = document.getElementById("date").value;
+
+      // Display the submitted data
+      const submittedInfo = `
+        <p><strong>Full Name:</strong> ${name}</p>
+        <p><strong>Email Address:</strong> ${email}</p>
+        <p><strong>Phone Number:</strong> ${phone}</p>
+        <p><strong>Subject:</strong> ${subject}</p>
+        <p><strong>Message:</strong> ${message}</p>
+        <p><strong>Preferred Contact Method:</strong> ${contactMethod}</p>
+        <p><strong>Subscribe to Newsletter:</strong> ${newsletter}</p>
+        <p><strong>Preferred Contact Date:</strong> ${date}</p>
+      `;
+      
+      // Show the data in the "display-data" section
+      document.getElementById("submitted-info").innerHTML = submittedInfo;
+      document.getElementById("display-data").style.display = "block";
+      
+      // Optionally, reset the form
+      document.getElementById("contact-form").reset();
+    }
+  </script>
+</body>
+</html>

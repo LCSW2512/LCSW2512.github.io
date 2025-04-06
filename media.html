@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!-- 
+  Name: Payal patel
+  Student Number: C0959412
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media - Clothes Dryer Co.</title>
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="shortcut icon" href="images/logo.avif"> 
+</head>
+<body>
+  <div class="container">
+
+    <nav class="main-nav">
+      <div class="nav-header">
+        <a href="index.html"><img src="images/logo.avif" alt="Logo" /></a>
+        <a class="menu-icon" onclick="hamburger()">&#9776;</a>
+      </div>
+      <div id="menu-links" class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="team.html">Our Team</a>
+        <a href="specials.html">Specials</a>
+        <a href="training.html">Training</a>
+        <a href="media.html">Media</a>
+        <a href="faq.html">FAQs</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </nav>
+    <header>
+      <img src="images/dryer.webp" alt="Clothes Dryer Co. Banner">
+    </header>
+
+    <main>
+      <h1>Media</h1>
+      <p>Welcome to the media section! Enjoy our product videos and audio clips.</p>
+
+      <!-- Audio Section -->
+      <section class="audio-section">
+        <h2>Product Soundtrack</h2>
+        <p>Listen to the ambient sounds of our products in action:</p>
+        <audio controls>
+          <source src="media/ffc_audio.mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+        </audio>
+      </section>
+
+      <!-- Video Section -->
+      <section class="video-section">
+        <h2>Product Demo Video</h2>
+        <p>Watch the demo of how our clothes dryers work:</p>
+        <video controls width="100%">
+          <source src="media/video.mp4" type="video/mp4">
+          Your browser does not support the video element.
+        </video>
+      </section>
+
+    </main>
+
+    <footer>
+      &copy; Copyright 2099. All Rights Reserved.<br>
+      <a href="mailto:info@clothesdryerco.com">Request information</a><br>
+      Payal Patel &nbsp;&nbsp; C0959412
+    </footer>
+  </div>
+  <!-- Script -->
+  <script>
+    function hamburger() {
+      const menu = document.getElementById("menu-links");
+      menu.classList.toggle("show");
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Specials - Clothes Dryer Co.</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="images/logo.avif"> 
+</head>
+<body>
+  <div class="container">
+    <nav class="main-nav">
+      <div class="nav-header">
+        <a href="index.html"><img src="images/logo.avif" alt="Logo" /></a>
+        <button class="hamburger" onclick="hamburger()">&#9776;</button>
+      </div>
+      <div id="menu-links" class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="team.html">Our Team</a>
+        <a href="specials.html">Specials</a>
+        <a href="training.html">Training</a>
+        <a href="media.html">Media</a>
+        <a href="faq.html">FAQs</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </nav>
+
+    <header>
+      <img src="images/dryer.webp" alt="Clothes Dryer Co. Banner">
+    </header>
+
+    <main>
+      <h1>Weekly Specials</h1>
+
+      <!-- Product of the Week -->
+      <section>
+        <h2>🌟 Product of the Week</h2>
+        <p><strong>EcoDry 3000 – Energy Efficient Clothes Dryer</strong></p>
+        <p>This sleek and modern dryer uses 40% less energy and dries clothes faster with gentle heat tech. Perfect for homes looking to save time, money, and the environment.</p>
+        <img src="images/special1.jpeg" alt="EcoDry 3000 Clothes Dryer" width="300" height="300">
+      </section>
+
+      <!-- Weekly Sales -->
+      <section>
+        <h2>🔥 Weekly Sales</h2>
+        <p>Check out this week's hot deals on select dryers and accessories!</p>
+        <ul>
+          <li>UltraDry Mini - Now only $299!</li>
+          <li>DrySmart Pro – 20% off with coupon code DRY20</li>
+          <li>Dryer Sheets Mega Pack - Buy 1 Get 1 Free</li>
+        </ul>
+        <img src="images/special2.avif" alt="Dryer on Sale" width="300" height="300">
+      </section>
+
+      <!-- Guarantee -->
+      <section>
+        <h2>✅ Our Customer Guarantee</h2>
+        <p>
+          We promise 100% satisfaction with every product. Our dryers are quality-tested and backed by a 5-year warranty.
+          <strong>Your satisfaction is guaranteed — or your money back!</strong>
+        </p>
+        <img src="images/special3.jpg" alt="Customer Guarantee" width="300" height="300">
+      </section>
+
+      <!-- Why Choose Us -->
+      <section>
+        <h2>💡 Why Buy From Clothes Dryer Co.?</h2>
+        <ul>
+          <li>Energy-efficient and eco-friendly</li>
+          <li>Top-rated customer support</li>
+          <li>Free delivery on all dryers</li>
+          <li>Trusted by thousands of satisfied customers</li>
+        </ul>
+        <img src="images/eco.webp" alt="Eco Friendly" width="300">
+      </section>
+    </main>
+
+    <footer>
+      &copy; Copyright 2099. All Rights Reserved.<br>
+      <a href="mailto:info@clothesdryerco.com">Request information</a><br>
+      Payal Patel &nbsp;&nbsp; C0959412
+    </footer>
+  </div>
+
+  <script>
+    function hamburger() {
+      const menu = document.getElementById("menu-links");
+      menu.classList.toggle("active");
+    }
+  </script>
+</body>
+</html>

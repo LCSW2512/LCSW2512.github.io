@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- 
+  Name: Payal Patel
+  Student Number: C0959412
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Clothes Dryer Co.</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="images/logo.avif"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <a href="index.html">
+        <img src="images/logo.avif" alt="Logo">
+      </a>
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="team.html">Our Team</a>
+        <a href="specials.html">Specials</a>
+        <a href="training.html">Training</a>
+        <a href="media.html">Media</a>
+        <a href="faq.html">FAQs</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <img src="images/dryer.webp" alt="Clothes Dryer Co. Banner">
+  </header>
+
+  <main>
+    <h1>Welcome to Clothes Dryer Co.</h1>
+    <p>Your #1 source for energy-efficient and reliable clothes dryers.</p>
+    <img src="images/welcome.webp" alt="Friendly Dryer Image" height="600" width="800">
+
+    <p>Your #2 source for energy-efficient and reliable clothes dryers.</p>
+    <img src="images/banner2.jpg" alt="Friendly Dryer Image" height="600" width="800">
+
+    <p>Your #3 source for energy-efficient and reliable clothes dryers.</p>
+    <img src="images/banner3.webp" alt="Friendly Dryer Image" height="600" width="800">
+  </main>
+
+  <footer>
+    &copy; Copyright 2099. All Rights Reserved.<br>
+    <a href="mailto:info@clothesdryerco.com">Request information</a><br>
+    Payal Patel &nbsp;&nbsp; C0959412
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('navLinks');
+      nav.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
